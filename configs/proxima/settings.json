@@ -1,0 +1,22 @@
+{
+  "providers": {
+    "perplexity": {
+      "enabled": true
+    },
+    "chatgpt": {
+      "enabled": true
+    },
+    "claude": {
+      "enabled": true
+    },
+    "gemini": {
+      "enabled": true
+    }
+  },
+  "ipcPort": 19222,
+  "theme": "dark",
+  "headlessMode": false,
+  "startMinimized": false,
+  "restApiEnabled": true,
+  "restApiPort": 3210
+}
