@@ -1,0 +1,60 @@
+{
+  "plugin": [
+    "oh-my-openagent@3.17.5"
+  ],
+  "$schema": "https://opencode.ai/config.json",
+  "disabled_providers": [
+    "kimi"
+  ],
+  "provider": {
+    "zerogravity": {
+      "npm": "@ai-sdk/google",
+      "name": "ZeroGravity (Gemini)",
+      "options": {
+        "apiKey": "not-needed",
+        "baseURL": "http://localhost:8741/v1beta"
+      },
+      "models": {
+        "gemini-3-flash": {
+          "name": "Gemini 3 Flash",
+          "limit": { "context": 128000, "output": 65536 }
+        },
+        "gemini-3-pro": {
+          "name": "Gemini 3 Pro",
+          "limit": { "context": 128000, "output": 65536 }
+        },
+        "opus-4.6": {
+          "name": "Claude Opus 4.6 (Thinking)",
+          "limit": { "context": 200000, "output": 65536 }
+        }
+      }
+    },
+    "proxima": {
+      "npm": "@ai-sdk/openai",
+      "name": "Proxima",
+      "options": {
+        "apiKey": "not-needed",
+        "baseURL": "http://localhost:3210/v1"
+      },
+      "models": {
+        "claude": {
+          "name": "Claude 3.5 Sonnet (Proxima)",
+          "limit": { "context": 200000, "output": 8192 }
+        },
+        "chatgpt": {
+          "name": "GPT-4o (Proxima)",
+          "limit": { "context": 128000, "output": 4096 }
+        },
+        "gemini": {
+          "name": "Gemini 2.0 Flash (Proxima)",
+          "limit": { "context": 128000, "output": 8192 }
+        },
+        "perplexity": {
+          "name": "Perplexity (Proxima)",
+          "limit": { "context": 128000, "output": 4096 }
+        }
+      }
+    }
+  },
+  "model": "proxima/claude"
+}

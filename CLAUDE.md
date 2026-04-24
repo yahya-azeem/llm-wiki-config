@@ -11,6 +11,13 @@ This repository is an **Andrej Karpathy style LLM Wiki**. It is a compounding kn
 - `assets/`: **Media Layer.** Store images and attachments here.
 - `.claude/`: **Agent Intelligence.** Contains skills, rules, and configurations.
 
+## Model Infrastructure (Proxima)
+All agentic reasoning is routed through **Proxima**, a local MCP/REST gateway.
+- **Provider**: Proxima (Local Proxy)
+- **Primary Model**: `proxima/claude` (Claude 3.5 Sonnet)
+- **Fallback Models**: `proxima/chatgpt` (GPT-4o), `proxima/gemini` (Gemini 2.0 Flash)
+- **Status**: Run `npm start` in the Proxima directory before beginning.
+
 ## The Karpathy Workflow
 When files are added to `raw/`, the LLM should:
 1.  **Ingest**: Process the raw file and synthesize it into new or existing wiki articles.

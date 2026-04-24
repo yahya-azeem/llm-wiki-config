@@ -1,0 +1,25 @@
+{
+  "enabledPlugins": {
+    "everything-claude-code@everything-claude-code": true
+  },
+  "extraKnownMarketplaces": {
+    "everything-claude-code": {
+      "source": {
+        "source": "github",
+        "repo": "affaan-m/everything-claude-code"
+      }
+    }
+  },
+  "autoUpdatesChannel": "latest",
+  "mcpServers": {
+    "proxima": {
+      "command": "node",
+      "args": [
+        "C:/Users/shama/.gemini/antigravity/scratch/Proxima/src/mcp-server-v3.js"
+      ],
+      "env": {
+        "PROXIMA_URL": "http://localhost:3210"
+      }
+    }
+  }
+}

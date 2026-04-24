@@ -1,0 +1,84 @@
+{
+  "$schema": "https://raw.githubusercontent.com/code-yeongyu/oh-my-opencode/master/assets/oh-my-opencode.schema.json",
+  "skills": {
+    "sources": [
+      {
+        "path": "~/.claude/skills",
+        "recursive": true
+      }
+    ],
+    "enable": [
+      "code-reviewer",
+      "security-reviewer",
+      "tdd-guide",
+      "architect"
+    ]
+  },
+  "agents": {
+    "sisyphus": {
+      "model": "proxima/claude",
+      "variant": "max"
+    },
+    "hephaestus": {
+      "model": "proxima/chatgpt",
+      "variant": "medium"
+    },
+    "oracle": {
+      "model": "proxima/chatgpt",
+      "variant": "high"
+    },
+    "librarian": {
+      "model": "proxima/claude"
+    },
+    "explore": {
+      "model": "proxima/gemini"
+    },
+    "multimodal-looker": {
+      "model": "proxima/gemini"
+    },
+    "prometheus": {
+      "model": "proxima/claude",
+      "variant": "max"
+    },
+    "metis": {
+      "model": "proxima/claude",
+      "variant": "max"
+    },
+    "momus": {
+      "model": "proxima/chatgpt",
+      "variant": "medium"
+    },
+    "atlas": {
+      "model": "proxima/claude"
+    }
+  },
+  "categories": {
+    "visual-engineering": {
+      "model": "proxima/gemini"
+    },
+    "ultrabrain": {
+      "model": "proxima/claude",
+      "variant": "xhigh"
+    },
+    "deep": {
+      "model": "proxima/claude",
+      "variant": "medium"
+    },
+    "artistry": {
+      "model": "proxima/gemini",
+      "variant": "high"
+    },
+    "quick": {
+      "model": "proxima/gemini"
+    },
+    "unspecified-low": {
+      "model": "proxima/claude"
+    },
+    "unspecified-high": {
+      "model": "proxima/claude"
+    },
+    "writing": {
+      "model": "proxima/gemini"
+    }
+  }
+}
