@@ -1,0 +1,11 @@
+# Obsidian
+.obsidian/
+.trash/
+
+# Claude Code
+.claude/sessions/
+.claude/worker-state.json
+
+# OS
+.DS_Store
+Thumbs.db
